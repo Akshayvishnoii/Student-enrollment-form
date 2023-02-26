@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Enrollment  Form using JPDB</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=""https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class='page-header text-center'>
+<h2>Student Enrollment form using JPDB API</h2></div>
+<form id="studentForm" method="get">
+<div class="form-group">
+<label>ROLL NO:</label>
+<input type="text" id="studentrollno" placeholder="enterrollno" class="form-control" onchange="getEmp()">
+</div>
+<div class="form-group">
+<label>Student Full Name:</label>
+<input type="text" class="form-control" id="studentfullName">
+</div>
+<div class="form-group">
+<label>Class:</label>
+<input type="number" class="form-control" id="studentclass">
+<div class="form-group">
+<label>Birth-date:</label>
+<input type="number" class="form-control" id="studentbirthdate">
+<div class="form-group">
+<label>Address:</label>
+<input type="text" class="form-control" id="studentaddress">
+</div>
+<div class="form-group">
+<label>Enrollment-date:</label>
+<input type="number" class="form-control" id="studentenrollmentdate">
+</div>
+<div class = "form-group text-center"></div>
+     <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()" enabled>Save</button>
+	 <button type="button" class="btn btn-lg btn-primary" id="update"onclick="updateData()" enabled>update</button>
+	 <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetform()" enabled>Reset</button>
+    </div>
+ </form>
+</div>
+<script>
+    <script type="text/javascript" src="http:/login2explore.com/jpdb/resources/js/0.0.3/jpdb.commons.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
